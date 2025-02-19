@@ -9,10 +9,9 @@
 # If you need to update your data delete the "ddcv_cache.rds" file and re-run
 
 library(tidyverse)
-source("CV_printing_functions.R")
+source("cv_printing_functions.R")
 cv_data <- create_CV_object(
-  data_location = "https://docs.google.com/spreadsheets/d/15Dlu_GRHEvsxBDYGC7k2T0WT_GEduKGtx-_QPKx6_oY/edit?gid=917338460#gid=917338460",
-  cache_data = FALSE
+  data_location = "https://docs.google.com/spreadsheets/d/15Dlu_GRHEvsxBDYGC7k2T0WT_GEduKGtx-_QPKx6_oY/edit?gid=917338460#gid=917338460"
 )
 
 readr::write_rds(cv_data, 'cached_positions.rds')
