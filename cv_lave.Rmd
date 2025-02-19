@@ -1,7 +1,6 @@
 ---
 title: "Luis Alberto Villanueva-Espino's CV"
 author: Luis Alberto Villanueva Espino 
-output: html_document
 date: "'r Sys.Date()'"
 params:
   pdf_mode:
@@ -12,7 +11,7 @@ output:
     self_contained: true
 ---
 
-```{r setup, include=FALSE}
+```{r, include=FALSE}
 knitr::opts_chunk$set(
   results='asis', 
   echo = FALSE
@@ -31,10 +30,9 @@ source("cv_printing_functions.R")
 #)
 
 CV <- create_CV_object(
-  data_location = "https://docs.google.com/spreadsheets/d/15Dlu_GRHEvsxBDYGC7k2T0WT_GEduKGtx-_QPKx6_oY/edit?usp=sharing",  
+  data_location = "https://docs.google.com/spreadsheets/d/15Dlu_GRHEvsxBDYGC7k2T0WT_GEduKGtx-_QPKx6_oY/edit?gid=917338460#gid=917338460",  
   pdf_mode = params$pdf_mode
  )
-
 
 ```
 
