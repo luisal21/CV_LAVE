@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 )
 
 library(magrittr) # For the pipe
-source("cv_printing_functions.r")
+source("cv_printing_functions.R")
 
 # Template https://github.com/nstrayer/datadrivencv/blob/master/inst/templates/cv.Rmd
 # Ultima actualizacion #https://github.com/nstrayer/cv/blob/master/cv.Rmd
@@ -31,9 +31,10 @@ source("cv_printing_functions.r")
 #)
 
 CV <- create_CV_object(
-  data_location = "https://docs.google.com/spreadsheets/d/15Dlu_GRHEvsxBDYGC7k2T0WT_GEduKGtx-_QPKx6_oY/edit?gid=917338460#gid=917338460",  
+  data_location = "https://docs.google.com/spreadsheets/d/15Dlu_GRHEvsxBDYGC7k2T0WT_GEduKGtx-_QPKx6_oY/edit?usp=sharing",  
   pdf_mode = params$pdf_mode
  )
+
 
 ```
 
@@ -78,7 +79,7 @@ CV %>% print_contact_info()
 <br>
 <br>
 
-Programming Languages {#skills}
+Language skills {#skills}
 --------------------------------------------------------------------------------
 
 ```{r}
