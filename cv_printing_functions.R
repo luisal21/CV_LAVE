@@ -44,6 +44,7 @@ create_CV_object <-  function(data_location,
     cv$skills        <- read_gsheet(sheet_id = "language_skills")
     cv$text_blocks   <- read_gsheet(sheet_id = "text_blocks")
     cv$contact_info  <- read_gsheet(sheet_id = "contact_info")
+    cv$programming_languages  <- read_gsheet(sheet_id = "programming_languages")
     cv$languages  <- read_gsheet(sheet_id = "languages")
   } else {
     # Want to go old-school with csvs?
@@ -244,14 +245,14 @@ print_contact_info <- function(cv){
 
 
 #' @description Programming Languages
-#print_programming_languages <- function(cv){
-#  glue::glue_data(
-#    cv$programming_languages,
-#    "<b>Expertise:</b> {expertise} <br><b>Familiarity:</b> {familiarity}"
-#  ) %>% print()
-##  
-#  invisible(cv)
-#}
+print_programming_languages <- function(cv){
+  glue::glue_data(
+    cv$programming_languages,
+    "<b>Expertise:</b> {expertise} <br><b>Familiarity:</b> {familiarity}"
+  ) %>% print()
+  
+  invisible(cv)
+}
 
 #' @description Languages
 print_languages <- function(cv){

@@ -77,11 +77,12 @@ CV %>% print_contact_info()
 <br>
 <br>
 
-Language skills {#skills}
+
+Programming Languages {#skills}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %>% print_language_skills()
+CV %>% print_programming_languages()
 ```
 
 <br>
