@@ -151,14 +151,6 @@ CV %<>% print_section('teaching_positions')
 ```
 
 
-#Data Science Writing {data-icon=chart-line}
-#-------------------------------------------------------------#------------------
-
-#```{r}
-#CV %<>% print_section('data_science_writings')
-#```
-
-
 Publications {data-icon=book}
 --------------------------------------------------------------------------------
 
